@@ -1,0 +1,2 @@
+"use strict";(()=>{var p=t=>!t?.startsWith("http")&&!t?.startsWith("data:"),i=(t,e=document.baseURI)=>p(t)?new URL(t,e).href:t;var c="https://cdn.rescript-lang.org/v9.1.2/compiler.js";var l=(t,e)=>{self.rescript_compiler||importScripts(i(c,t));let n=self.rescript_compiler.make();return n.setModuleSystem("es6"),n.setFilename("index.bs.js"),async s=>{let o=s;try{let r=n[e].format(s);r.type==="success"&&(o=r.code)}catch{}return{formatted:o,cursorOffset:0}}};self.createRescriptFormatter=l;})();
+//# sourceMappingURL=lang-rescript-formatter.js.map
